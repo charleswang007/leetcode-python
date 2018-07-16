@@ -17,13 +17,14 @@ class Solution(object):
         if num <= 0:
            return False;
         for i in only :
-            while(num%i==0):
-               num=num/i;
-        if (num==1):
+            while(num % i == 0):
+               num = num / i;
+        if (num == 1):
             return True;
         else:
             return False;      
             
 if __name__=="__main__":
-    num = 14
+    #num = 14
+    num = 15
     print Solution().isUgly(num)   

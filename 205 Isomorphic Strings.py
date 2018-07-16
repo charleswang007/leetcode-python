@@ -30,11 +30,11 @@ class Solution(object):
            ord1,ord2 = ord(s[i]),ord(t[i])
            if(c1[ord1] != c2[ord2]):
               return False;
-           c1[ord1] = i + 1 ;
+           c1[ord1] = i + 1;
            c2[ord2] = i + 1;
         return True;
 
             
 if __name__=="__main__":
-    s, t = "foo", "bar"
+    s, t = "foo", "brr"
     print Solution().isIsomorphic(s, t)             

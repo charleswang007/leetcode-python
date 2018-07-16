@@ -25,5 +25,5 @@ class Solution(object):
             return False;
                
 if __name__=="__main__":
-    s = '{}[]'
+    s = '({}[])'
     print Solution().isValid(s)             

@@ -12,11 +12,11 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
-        threepower=3**100;
-        if(n<=0):
+        threepower = 3 ** 100;
+        if (n <= 0):
             return False;
         else:
-           if(threepower%n==0):
+           if (threepower % n == 0):
               return True;
            else:
               return False;

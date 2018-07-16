@@ -19,15 +19,10 @@ class Solution(object):
         if len(num) == 1: return [num]
         res = []
         for i in range(len(num)):
-            #print 'num[:i]',num[:i]
-            #print 'num[i+1:]',num[i+1:]
-            #print 'num[:i] + num[i+1:]',num[:i] + num[i+1:]
             for j in self.permute(num[:i] + num[i+1:]):
-                #print '[num[i]]:',[num[i]]
-                #print 'j',j
                 res.append([num[i]] + j)
         return res
             
 if __name__=="__main__":
-    nums = [1,2,3]
+    nums = [1,2,3,4]
     print Solution().permute(nums)             

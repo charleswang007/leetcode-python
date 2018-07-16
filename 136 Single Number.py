@@ -18,11 +18,9 @@ class Solution(object):
         0 a=1 b=1  (1&0)||(0&1)
         #nums =[1,2,3,5,1,2,3]
         """      
-        res=0;
+        res = 0;
         for i in nums:
-           #print res,'^',i,'   '
-           res=res^i;
-           #print 'res',res
+           res = res ^ i;
         return res;
             
 if __name__=="__main__":

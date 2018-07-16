@@ -24,9 +24,12 @@ class Solution(object):
             if target - value in dict_temp:
                 return [dict_temp[target - value], index]
             dict_temp[value] = index
+            #print dict_temp
 
 
 if __name__ == "__main__":
-    nums = [3, 2, 4]
-    target = 6
+    #nums = [3, 2, 4]
+    #target = 6
+    nums = [2, 7, 11, 15]
+    target = 9
     print(Solution().twoSum(nums, target))

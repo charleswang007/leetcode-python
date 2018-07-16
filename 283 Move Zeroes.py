@@ -18,7 +18,7 @@ class Solution(object):
         count = 0
 
         for i in range(len(nums)):
-            if (nums[i])!=0 :
+            if (nums[i]) != 0 :
                 nums[count] = nums[i];
                 count += 1;
         

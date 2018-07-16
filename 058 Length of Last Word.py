@@ -20,9 +20,9 @@ class Solution(object):
         count=''; 
         for i in s.split(' '):
           if(i!=''):
-             count=i;
-        return  len(count);
+             count = i;
+        return len(count);
             
 if __name__=="__main__":
-    s = "Hello World"
+    s = "Hello World Puppy Wang"
     print Solution().lengthOfLastWord(s)             

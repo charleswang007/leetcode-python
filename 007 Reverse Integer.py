@@ -34,7 +34,15 @@ class Solution(object):
                return  0;      
            else:
                return int(newstr);
+
+    def reverse2(self, x):
+        sign = 1
+        if x < 0:
+            sign = -1
+            x = -x
+        lst = [i for i in str(x)]
+        return int("".join(reversed(lst))) * sign
                
 if __name__=="__main__":
     x = -123
-    print Solution().reverse(x) 
+    print Solution().reverse2(x) 
