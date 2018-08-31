@@ -21,7 +21,7 @@ class Solution(object):
         """
         while val in nums:
             nums.remove(val);
-        return (len(nums));
+        return len(nums);
             
 if __name__=="__main__":
     nums = [3,2,4,4,2,3]

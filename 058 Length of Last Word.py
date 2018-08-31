@@ -17,12 +17,14 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        count=''; 
+        count = ''; 
         for i in s.split(' '):
-          if(i!=''):
+          if(i != ''):
              count = i;
         return len(count);
+    def lengthOfLastWord1(self, s):
+        return len(s.split(' ')[-1])
             
 if __name__=="__main__":
     s = "Hello World Puppy Wang"
-    print Solution().lengthOfLastWord(s)             
+    print Solution().lengthOfLastWord1(s)             

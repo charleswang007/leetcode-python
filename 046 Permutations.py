@@ -24,5 +24,6 @@ class Solution(object):
         return res
             
 if __name__=="__main__":
-    nums = [1,2,3,4]
-    print Solution().permute(nums)             
+    nums = [1,2,3,4,5]
+    print Solution().permute(nums)
+    print "total permutation: ", len(Solution().permute(nums)) # 5!

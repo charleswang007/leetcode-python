@@ -11,19 +11,21 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        while s.find("()")!=-1 or s.find("[]")!=-1 or s.find("{}")!=-1:
-              if(s.find("()")!=-1 ):
-                s=s.replace("()","");
-              if(s.find("[]")!=-1):
-                s=s.replace("[]","");
-              if(s.find("{}")!=-1):
-                s=s.replace("{}","");
+        while s.find("()") != -1 or s.find("[]") != -1 or s.find("{}") != -1:
+            if(s.find("()") != -1 ):
+                s = s.replace("()","");
+            if(s.find("[]") != -1):
+                s = s.replace("[]","");
+            if(s.find("{}") != -1):
+                s = s.replace("{}","");
              
-        if(len(s)==0):
+        if(len(s) == 0):
             return True;
         else:
             return False;
                
 if __name__=="__main__":
     s = '({}[])'
-    print Solution().isValid(s)             
+    print Solution().isValid(s)
+    t = '({}[]))'
+    print Solution().isValid(t)     

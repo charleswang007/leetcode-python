@@ -10,16 +10,16 @@ class Solution(object):
         :rtype: bool
         """
         
-        if(x<0):
-          return False;
+        if(x < 0):
+            return False;
         else:
-          reversed_str = str(x);
-          reversed_str = reversed_str[::-1];           
-          if(x == int(reversed_str) ):
-              return True;
-          else:
-              return False;
+            reversed_str = str(x)[::-1] 
+            if(x == int(reversed_str)):
+                return True;
+            else:
+                return False;
                
 if __name__=="__main__":
     x = 123321
+    print type("".join(reversed("abcde"))) # string
     print Solution().isPalindrome(x)             

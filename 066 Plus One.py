@@ -23,6 +23,6 @@ class Solution(object):
         return digits;
             
 if __name__=="__main__":
-    #digits = [0,1,2,7,9,9,9]
-    digits = [9]
-    print Solution().plusOne(digits)             
+    digits = [0,1,2,7,9,9,9]
+    #digits = [9]
+    print Solution().plusOne(digits)
