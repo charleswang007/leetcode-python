@@ -1,7 +1,7 @@
 def trunk_1(arr_1, size_1):
     result_1 = []
-    while arr:
-        pop_data = [arr_1.pop(0) for _ in range(size_1)]
+    while arr_1:
+        pop_data = [arr_1.pop(0) for i in range(size_1)]
         result_1.append(pop_data)
     return result_1
 
@@ -23,6 +23,6 @@ if __name__ == "__main__":
     result = [[1, 2], [3, 4], [5, 6]]
     '''
     arr = [1, 2, 3, 4, 5, 6]
-    size = 2
-    result = trunk_2(arr, size)
+    size = 3
+    result = trunk_1(arr, size)
     print(result)
