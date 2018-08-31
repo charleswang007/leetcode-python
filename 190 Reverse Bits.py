@@ -16,25 +16,25 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        origin=[];
-        bit=[];
+        origin = [];
+        bit = [];
         for i in range(32):
-            origin.append(2**i); 
+            origin.append(2 ** i); 
   
         for i in reversed(origin):
-            if(n>=i):
-                n=n-i;
+            if(n >= i):
+                n = n - i;
                 bit.append(1);
             else:
                 bit.append(0);
                 
-        count=31;
-        sum=0;
+        count = 31;
+        sum = 0;
         for i in reversed(bit):
-            sum+=(i*(2**count));
-            count-=1;
+            sum += (i * (2 ** count));
+            count -= 1;
         return sum ; 
             
 if __name__=="__main__":
     n = 43261596
-    print Solution().reverseBits(n)             
+    print Solution().reverseBits(n)

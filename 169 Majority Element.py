@@ -15,9 +15,9 @@ class Solution(object):
         count = 0;
         answer = 0;
         for show in new:
-            if(nums.count(show)>count):
-              count=nums.count(show);
-              answer=show;
+            if(nums.count(show) > count):
+              count = nums.count(show);
+              answer = show;
         return answer
             
 if __name__=="__main__":

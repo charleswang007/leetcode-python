@@ -21,14 +21,16 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        total=0;
-        count=0;
+        total = 0;
+        count = 0;
  
         for i in s[::-1]:
-            total+= (ord(i)-64)*(26**count);
-            count+=1;
+            total += (ord(i) - 64) * (26 ** count)
+            count += 1
         return total;
             
 if __name__=="__main__":
     s = "BDA"
     print Solution().titleToNumber(s)             
+    t = "AB"
+    print Solution().titleToNumber(t) 

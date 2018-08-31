@@ -20,28 +20,29 @@ class Solution(object):
         :rtype: str
         """
      
-        if(n>26 and n%26!=0):
-            temp=[];
-            s='';
-            while n>26:             
-                temp.insert(0,n%26);
-                n=n/26;
-                if(n<27):
-                   temp.insert(0,n);     
+        if(n > 26 and n % 26 != 0):
+            temp = [];
+            s = '';
+            while n > 26:             
+                temp.insert(0, n % 26);
+                n = n / 26;
+                if(n < 27):
+                   temp.insert(0, n);     
             for i in temp:       
-                s+=chr(i+64); 
+                s += chr(i + 64); 
             return s;
-        elif(n/26>1 and n%26==0 ):
-            s='';
-            while(n/26>1):
-              s+='Z';
-              n=n/26;
-            s=chr(n-1+64)+s;             
+        elif(n / 26 > 1 and n % 26 == 0 ):
+            s = '';
+            while(n / 26 > 1):
+              s += 'Z';
+              n = n / 26;
+            s = chr(n - 1 + 64) + s;             
             return s;
         else:
-            s=chr(n+64);
+            s = chr(n + 64);
             return s;
             
 if __name__=="__main__":
     n = 125
+    print chr(65) # A
     print Solution().convertToTitle(n)             

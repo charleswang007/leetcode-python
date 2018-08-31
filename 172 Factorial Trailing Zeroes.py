@@ -11,14 +11,16 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        count=0;
-        check=5;
+        count = 0
+        check = 5
 
         while n >= check:
-            count += n/check;
-            check*=5;
-        return count ;
+            count += n / check
+            check *= 5
+            print "count: ", count
+            print "check: ", check
+        return count
             
 if __name__=="__main__":
-    n = 13
+    n = 50
     print Solution().trailingZeroes(n)             

@@ -15,7 +15,7 @@ class Solution(object):
         """
         slist = s.split(' ');
         while '' in slist:
-              slist.remove('');
+            slist.remove('');
         slist.reverse();      
         return  ' '.join(slist) ;
             
