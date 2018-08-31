@@ -24,36 +24,36 @@ class Solution(object):
         :type guess: str
         :rtype: str
         """
-        ansA='';
+        ansA = '';
         count = 0;
-        temp_secret = [];
-        temp_guess = [];
+        temp_secret = []
+        temp_guess = []
         for i in range(len(secret)):
             if(secret[i] == guess[i]):
-               count+=1;               
+               count += 1;              
             else:
-               temp_secret.append(secret[i]);
-               temp_guess.append(guess[i]);
+               temp_secret.append(secret[i])
+               temp_guess.append(guess[i])
        
-        if(count==0):
+        if(count == 0):
             ansA = '0A';
         else:
-            ansA = str(count) + 'A' ;          
+            ansA = str(count) + 'A'       
             
-        count = 0;
-        ansB = '';
+        count = 0
+        ansB = ''
 
         for i in temp_guess:
-           if(i in temp_secret):
-               count+=1;
-               temp_secret.remove(i);
+           if i in temp_secret:
+               count += 1
+               temp_secret.remove(i)
 
-        if(count==0):
-            ansB = '0B';
+        if(count == 0):
+            ansB = '0B'
         else:
-            ansB = str(count) + 'B' ;  
+            ansB = str(count) + 'B'
 
-        return ansA + ansB; 
+        return ansA + ansB
         
 if __name__=="__main__":
     secret, guess = "1807", "7810"

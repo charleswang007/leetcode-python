@@ -12,12 +12,12 @@ class Solution(object):
         """
         s = set();
         for i in range(len(nums)):
-            if(i>k):
+            if(i > k):
                s.remove(nums[i-k-1]);
-            if(nums[i] in s ):
-               return True;
-            s.add(nums[i]);
-        return False;
+            if(nums[i] in s):
+               return True
+            s.add(nums[i])
+        return False
             
 if __name__=="__main__":
     nums = [5,2,6,4,1,2,3]

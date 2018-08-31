@@ -11,7 +11,7 @@ class Solution(object):
         """
         oringin = len(nums) ;
         new = len(set(nums));
-        if( oringin != new): #copy
+        if( oringin != new):
             return True;
         else :
             return False;

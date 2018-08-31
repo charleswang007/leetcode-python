@@ -24,7 +24,7 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        c1,c2 = [0] * 200, [0] * 200
+        c1, c2 = [0] * 200, [0] * 200
         
         for i in range(len(s)):
            ord1,ord2 = ord(s[i]),ord(t[i])

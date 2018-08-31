@@ -22,6 +22,7 @@ class Solution(object):
         """
         if len(s) != len(t):
             return False
+        
         count = [0] * 123
         
         for ch in s:
@@ -33,5 +34,5 @@ class Solution(object):
         return True         
             
 if __name__=="__main__":
-    s, t = "anagram","nagaram"
+    s, t = "anagram", "nagaram"
     print Solution().isAnagram(s, t)             

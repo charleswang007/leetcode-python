@@ -10,11 +10,11 @@ class Solution(object):
         :rtype: bool
         """
         
-        two_power=2**50;
-        if(n<=0):
+        two_power = 2 ** 50;
+        if(n <= 0):
             return False;
         else:
-           if(two_power%n==0 ):
+           if(two_power % n == 0 ):
                return True;
            else:
                return False;            

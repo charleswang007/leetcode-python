@@ -24,16 +24,17 @@ class Solution(object):
 
         if(len(pattern) != len(str_list)):
            return False;
-        patdic , strdic = {},{};
+        patdic , strdic = {}, {};
         for pat,st in zip(pattern,str_list) :
-          if(pat not in patdic):
-             patdic[pat] = st;
-          if(st not in strdic):
-             strdic[st] = pat;
-          if(patdic[pat]!=st or strdic[st]!=pat):
-             return False;    
+            if(pat not in patdic):
+                patdic[pat] = st;
+            if(st not in strdic):
+                strdic[st] = pat;
+            if(patdic[pat] != st or strdic[st] != pat):
+                return False;    
         return True;    
         
 if __name__=="__main__":
-    pattern, str = "abba","dog cat cat dog" 
-    print Solution().wordPattern(pattern, str)             
+    pattern, str = "abba", "dog cat cat dog" 
+    print Solution().wordPattern(pattern, str)
+    print zip("abba","dog cat cat dog".split(" "))
