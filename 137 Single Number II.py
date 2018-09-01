@@ -17,7 +17,15 @@ class Solution(object):
         for i in dic:
             if dic[i] == 1:
                return i;
+               
+    def singleNumber1(self, nums):
+        if len(nums) == 1:
+            return nums[0]
+        s = sum(set(nums)) * 3
+        for n in nums:
+            s = s - n
+        return s / 2
             
 if __name__=="__main__":
     nums = [1,2,1,2,3,3,4,3,1,2]
-    print Solution().singleNumber(nums)             
+    print Solution().singleNumber1(nums)             

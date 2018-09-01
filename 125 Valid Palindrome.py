@@ -21,10 +21,7 @@ class Solution:
     def isPalindrome(self, s):
         s = s.lower();
         s = re.sub('[^a-z0-9]','',s) # 正則表達式去除非字母和數字
-        if s == s[::-1]: 
-            return True;
-        else:
-            return False;
+        return s == s[::-1]
             
 if __name__=="__main__":
     s = "A man, a plan, a canal: Panama"
