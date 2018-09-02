@@ -15,12 +15,12 @@ class Solution(object):
             print "i: ", i
             print "digit: ", digits[i]
             if digits[i] < 9:
-                digits[i] += 1;
-                return digits; # return here
+                digits[i] += 1
+                return digits
             else:
-                digits[i] = 0;
-        digits.insert(0, 1);
-        return digits;
+                digits[i] = 0
+        digits.insert(0, 1)
+        return digits
             
 if __name__=="__main__":
     digits = [0,1,2,7,9,9,9]
