@@ -22,5 +22,5 @@ class Solution(object):
         return count
             
 if __name__=="__main__":
-    n = 50
+    n = 100
     print Solution().trailingZeroes(n)             
