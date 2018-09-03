@@ -34,10 +34,9 @@ class Solution(object):
             node, sum = stack.pop()
             if not node.left and not node.right and node.val == sum:
                 return True
-            
             if node.left:
-                stack.append((node.left, sum-node.val))
+                stack.append((node.left, sum - node.val))
             if node.right:
-                stack.append((node.right, sum-node.val))
+                stack.append((node.right, sum - node.val))
             
         return False

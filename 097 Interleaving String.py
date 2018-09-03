@@ -33,19 +33,12 @@ class Solution(object):
         stack, visited = [(0, 0)], set((0, 0))
         while stack:
             x, y = stack.pop()
-            print "x: ", x
-            print "y: ", y
             if x + y == l:
-                print "CONDITION 1"
                 return True
             if x + 1 <= r and s1[x] == s3[x+y] and (x + 1, y) not in visited:
                 stack.append((x + 1, y)); visited.add((x + 1, y))
-                print "CONDITION 2"
             if y + 1 <= c and s2[y] == s3[x+y] and (x, y + 1) not in visited:
                 stack.append((x, y + 1)); visited.add((x, y + 1))
-                print "CONDITION 3"
-            print "stack: ", stack
-            print "visited: ", visited
         return False
         
 if __name__ == "__main__":

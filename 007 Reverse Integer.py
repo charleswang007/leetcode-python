@@ -42,6 +42,7 @@ class Solution(object):
             x = -x
         lst = [i for i in str(x)]
         return int("".join(reversed(lst))) * sign
+        
                
 if __name__=="__main__":
     x = -123

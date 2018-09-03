@@ -12,19 +12,19 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        list_bit=[];
-        num=0;
+        list_bit = []
+        num = 0
         for i in range(33):
-           num=2**i;
-           list_bit.append(num); 
-
-        count=0;
+           num = 2 ** i
+           list_bit.append(num)
+        print list_bit
+        count = 0
         for i in reversed(list_bit):
-            if(n>=i):
-               n=n-i;
-               count+=1;
+            if(n >= i):
+               n = n - i
+               count += 1
                
-        return count;
+        return count
             
 if __name__=="__main__":
     n = 11
